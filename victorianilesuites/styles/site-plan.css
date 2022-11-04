@@ -16,15 +16,15 @@ Fonts are separated by a | */
   --paragraph-font: Poppins, Segoe UI, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #21295C;  /* headlines on a white background */ 
+  --headline-color-on-color: #0CF574; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #21295C; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #0CF574; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #21295C  ;
+  --nav-link-color: #FE7F2D;
+  --nav-background-color: #21295C;
+  --nav-hover-link-color: #21295C;
+  --nav-hover-background-color: #0CF574;
 }
 
 
