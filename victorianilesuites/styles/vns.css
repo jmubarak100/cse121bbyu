@@ -193,20 +193,20 @@ color: #FE7F2D;
 .address{
   grid-column: 1/2;
   margin-right: 0;
-  align-items: top;
+  
 }
 
 .quicklinks{
   grid-column: 2/3;
   justify-items: right;
-  align-items: top;
+  
   text-decoration: none;
 }
 
 .socialmedialinks{
   grid-column: 3/4;
   justify-items: right;
-  align-items: top;
+  
 }
 
 .qlink{
