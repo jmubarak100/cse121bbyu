@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VictoriaNileSuites|Home</title>
+    <title>Victoria Nile Suites|Home</title>
+    <link rel="stylesheet" type="image/x-icon" href="images/VictoriaNilesSuitesLogo.png">
+    <link rel="stylesheet" style="width:16px; height:16px;" href="styles/vns.css">
 </head>
 <body>
     <header>
+      
         <a href="index.html" id="vnslogolink">
             <img class="vnslogo" src="images/VictoriaNilesSuitesLogo.png" alt="VictoriaNileSuitesLogo">
         </a>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="services_amenities.html">Services And Amenities</a>
-            <a href="faq.html">FAQ's And Reviews</a>
+            <a class="hometab" href="index.html">Home</a>
+            <a class="page2" href="services_amenities.html">Services And Amenities</a>
+            <a class="page3" href="faq.html">FAQ's And Reviews</a>
         </nav>
+      
     </header>
+    <div class="weltxt">
+      <h1>Welcome to Victoria Nile Suites.</h1>
+    </div>
     <main>
          <!-- This is the container for the image gallery -->
 <div class="container">
@@ -24,32 +31,32 @@
     <!-- Full-width images with number text -->
     <div class="mySlides">
       <div class="numbertext">1 / 6</div>
-        <img src="images/river-bank-b.jpg" style="width:100%">
+        <img src="images/sun.png" style="width:100%; border-top-right-radius:2%; border-top-left-radius:2%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">2 / 6</div>
-        <img src="images/hotelroom-d.jpg" style="width:100%">
+        <img src="images/hotelroom-d.jpg" style="width:100%; border-radius:2%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">3 / 6</div>
-        <img src="images/dish-b.jpg" style="width:100%">
+        <img src="images/dish-b.jpg" style="width:100%; border-radius:2%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">4 / 6</div>
-        <img src="images/gym-a.jpg" style="width:100%">
+        <img src="images/gym-a.jpg" style="width:100%; border-radius:2%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">5 / 6</div>
-        <img src="images/c-room-e.jpg" style="width:100%">
+        <img src="images/c-room-e.jpg" style="width:100%; border-radius:2%">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">6 / 6</div>
-        <img src="images/animal-crocodile1.jpg" style="width:100%">
+        <img src="images/animal-crocodile1.jpg" style="width:100%; border-top-right-radius:2%; border-top-left-radius:2%">
     </div>
   
     <!-- Next and previous buttons -->
@@ -64,81 +71,122 @@
     <!-- Thumbnail images -->
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="images/river-bank-b.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Beautiful River Nile At Dawn">
+        <img class="demo cursor" src="images/sun.png" style="width:100%; border-bottom-left-radius:12%; height: 140px;"  onclick="currentSlide(1)" alt="The Beautiful River Nile At Dawn">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/hotelroom-d.jpg" style="width:100%" onclick="currentSlide(2)" alt="Comfortable and Luxurious Suites">
+        <img class="demo cursor" src="images/hotelroom-d.jpg" style="width:100%; " onclick="currentSlide(2)" alt="Comfortable and Luxurious Suites">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/dish-b.jpg" style="width:100%" onclick="currentSlide(3)" alt="A Local Tilapia Dish">
+        <img class="demo cursor" src="images/dish-b.jpg" style="width:100%; " onclick="currentSlide(3)" alt="A Local Tilapia Dish">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/gym-a.jpg" style="width:100%" onclick="currentSlide(4)" alt="Your Fitness is guranteed">
+        <img class="demo cursor" src="images/gym-a.jpg" style="width:100%; " onclick="currentSlide(4)" alt="Your Fitness is guranteed">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/c-room-e.jpg" style="width:100%" onclick="currentSlide(5)" alt="Well Organized Conference Rooms">
+        <img class="demo cursor" src="images/c-room-e.jpg" style="width:100%; " onclick="currentSlide(5)" alt="Well Organized Conference Rooms">
       </div>
       <div class="column">
-        <img class="demo cursor" src="images/animal-crocodile1.jpg" style="width:100%" onclick="currentSlide(6)" alt="The Nile Crocodile">
+        <img class="demo cursor" src="images/animal-crocodile1.jpg" style="width:100%; border-bottom-right-radius:12%;" onclick="currentSlide(6)" alt="The Nile Crocodile">
       </div>
 
     </div>
   </div> 
+  <script>
+  let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    } </script>
+  
   <div class="intro-statements">
     <p>Welcome to the source of the Nile, the grand jewel of the Pearl of Africa. A phenomena so intriguing, full of marvellous wonders, with a rich history and culture, a blessing to the nations of Africa and the rest of the world.</p> 
-<h3> Welcome to Victoria Nile Suites, an island of tranquility, fun and adventure.</h3>
+
+<h3 class="caption"> Welcome to Victoria Nile Suites, an island of tranquility, fun and adventure.</h3>
+
     <p> We at Victoria Nile Tours are committed to providing utmost and fully satisfying care and comfort to the guests of the Nile. With this platform in place, it will be made easier for any of all our visitors or customers to fully view and understand the services we offer, have a glimpse and a brief feel and realization of how fun and adventurous it is to visit the source of the Nile. It is to provide a platform to allow and enable users make bookings in advance so that we, at the agency can get ready to receive, care for and accommodate our guests. It will also enable our online and previous visitors express their opinions regarding there experience at the Nile in Uganda, and suggest any changes we can make and how we can do it better.</p>  
+
     <p>At Victoria Nile Suites, is a diverse mix of cultures from nations all over the world. From people and families on vacation, business men and women to groups of tourists from the local areas and abroad, exquisite and satisfying services are in place that suite people of all classes and status and at the most affordable and friendly charges. There are also draws to offer discounts to the lucky ones that make bookings to have a feel of the stunning and intriguing sites and services we have to offer.</p>  <!-- change this -->
+
     <p>
         We are located along the banks of the Nile River a few meters from the beach.
         People of all nations,tribes and races are gladly welcome to the Hotel.
         We offer world class exquisite and tremendously satisfying services, from safety, health, tourism and transport as the visitors take a tour of the suroundings.
         We hear by welcome you to the island of tranquility.
       </p>
-  </div>
 
-    </main>
+  </div>
+ </main>
+
     <footer>
 <div id="links_addresses">
-    <div class="address">
-        <p><b>Address Section;</b></p>
+
+    <div class="address" >
+        <p ><b>Address Section;</b></p>
         <address>
             <p>We are located off Jinja-Road</p>
             <p>20KM From the main the main road</p>
             <p>Plot-278, Block-789</p>
         </address>
-    </div>
-    <div class="quicklinks" >
-        
+    </div> 
+
+    <div class="quicklinks" > 
         <p><b>Quick Links Section;</b></p>
 <p><a class="qlink" href="index.html">Home</a></p>
 <p><a class="qlink" href="services_amenities.html">Services And Amenities</a></p>
 <p><a class="qlink" href="faq.html">FAQ's And Reviews</a></p>
 <p><a class="qlink" href="site-plan.html">Site Plan</a></p>
     </div>
+
     <div class="socialmedialinks">
+      <p><b>Contact us on;</b></p>
         <a class="slink" href="https://twitter.com">
-            <img src="images/twitter.png" alt="Twitter Logo" width="50px">
+            <img class="logo" src="images/twitter.png" alt="Twitter Logo" width="50px">
         </a>
         <a class="slink" href="https://facebook.com">
-            <img src="images/facebook.png" alt="Facebook Logo" width="50px">
+            <img class="logo" src="images/facebook.png" alt="Facebook Logo" width="50px">
         </a>
         <a class="slink" href="https://pinterest.com">
-            <img src="images/pinterest.png" alt="Pinterest Logo" width="50px">
+            <img class="logo" src="images/pinterest.png" alt="Pinterest Logo" width="50px">
         </a>
         <a class="slink" href="https://instagram.com">
-            <img src="images/instagram.png" alt="Instagram Logo" width="50px">
+            <img class="logo" src="images/instagram.png" alt="Instagram Logo" width="50px">
         </a>
         <a class="slink" href="https://telegram.com">
-            <img src="images/telegram.png" alt="Telegram Logo" width="50px">
+            <img class="logo" src="images/telegram.png" alt="Telegram Logo" width="50px">
         </a>
         <a class="slink" href="https://victorianilesuites@gmail.com">
-            <img src="images/mail.png" alt="Mail Logo" width="50px">
+            <img class="logo" src="images/mail.png" alt="Mail Logo" width="50px">
         </a>
 
     </div>
+
 </div>
-    </footer>
+ </footer>
     
 </body>
 </html>
