@@ -137,12 +137,19 @@
     color: #FE7F2D;
     font-size: 40px;
     border-top: 2px solid #0CF574;
+    text-align: center;
   }
 
   .caption{
-    color: #FE7F2D;
+    color: #2F97C1;
     font-family: Playball;
-    font-size: 27px;
+    font-size: 30px;
+  }
+
+  .caption:hover{
+    transition: 0.6s ease-in-out;
+    color: #FE7F2D;
+    font-size: 35px;
   }
 
   body{
