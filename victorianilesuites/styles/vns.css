@@ -224,6 +224,7 @@ color: #FE7F2D;
 .logo{
   border: 2px dotted #FE7F2D;
   border-radius: 100%;
+  width: 12%;
 }
 
 b{
@@ -271,14 +272,18 @@ ol{
 
 li{
   grid-column: 1/2;
-  justify-items: space-around;
-  align-items: space-around;
+  justify-items: center;
+  align-items: center;
 }
 
-.s-a-img{
+.listimg{
   grid-column: 2/3;
   align-items: center;
   justify-items: left;
+  list-style-type: none;
+}
+
+.s-a-img{
   border-radius: 5%;
   width: 280px;
   height: 180px;
@@ -297,7 +302,7 @@ strong{
   font-family: Playball;
   text-align: center;
   padding-left: 30px;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 span{
