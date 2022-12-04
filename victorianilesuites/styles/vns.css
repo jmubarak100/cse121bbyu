@@ -107,7 +107,7 @@
     width: 100px;
     border: 1px #0CF574;
     border-radius: 5%;
-    margin:0px 0px 0px 2px;
+    margin:0 auto;
   }
 
   nav{
@@ -242,4 +242,65 @@ color: #FE7F2D;
 
 .logo:hover{
 border: 2px solid #0CF574;
+}
+
+#qnansgrid{
+  border: 2px solid #2F97C1;
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+
+ol{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 28px;
+  justify-content: center;
+  justify-items: center;
+  font-family: Poppins;
+  padding: 40px;
+  color: #0CF574;
+  list-style-type: disc;
+}
+
+.service{
+  font-family: Playball;
+  font-size: 25px;
+  color: #FE7F2D;
+}
+
+li{
+  grid-column: 1/2;
+  justify-items: space-around;
+  align-items: space-around;
+}
+
+.s-a-img{
+  grid-column: 2/3;
+  align-items: center;
+  justify-items: left;
+  border-radius: 5%;
+  width: 280px;
+  height: 180px;
+}
+
+h2{
+  font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
+  color: #FE7F2D;
+  font-size: 60px;
+  border-top: 2px solid #0CF574;
+  text-align: center;
+}
+
+strong{
+  color: #FE7F2D;
+  font-family: Playball;
+  text-align: center;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+span{
+  color: #0CF574;
+  text-decoration: underline;
 }
