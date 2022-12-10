@@ -378,7 +378,6 @@ padding: 30px;
 .columnrvw {
     width: 100%;
     display: block;
-    
 }
 }
 
@@ -436,19 +435,19 @@ justify-items: center;
 .rvwtitle{
   font-size: 20px;
   color: #0CF574;
-  font: Playball,"Arial Rounded MT Bold", "Coppper Black";
+  font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
   font-weight: 700;
   font-style: italic;
 }
 
 .rvwend{
   color: #0CF574;
-  font: Playball,"Arial Rounded MT Bold", "Coppper Black";
+  font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
   margin-left: 25px;
 }
 
 .rvwintro{
-  font: Playball,"Arial Rounded MT Bold", "Coppper Black";
+  font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
   color: #0CF574;
   margin-left: 23px;
 }
