@@ -132,11 +132,11 @@
     grid-column:4/5;
   }
 
-  .weltxt{
+  .aweltxt{
     font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
     color: #FE7F2D;
-    font-size: 40px;
     border-top: 2px solid #0CF574;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -178,8 +178,6 @@ nav a{
   float: left;
   justify-self: right;
   text-align: center;
-
-  
 }
 
 nav a:hover{
@@ -231,11 +229,6 @@ color: #FE7F2D;
   font-family: Playball;
   font-size: 30px;
 }
-/*.snattl{
-  color: #FE7F2D;
-  font-family: Playball;
-  font-size: 55px;
-}*/
 
 .slink:hover{
   color: #0CF574;
@@ -325,6 +318,9 @@ span{
   font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
   color: #0CF574;
   font-size: 25px;
+  left: 10px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 hr{
@@ -344,25 +340,7 @@ padding: 30px;
   padding: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-/*.row{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items:center;
-  justify-items: center;
-}
-
-.rwr1{
-  grid-column: 1/2;
-}
-
-.rwr2{
-  grid-column: 2/3;
-}
-
-.rwr3{
-  grid-column: 3/4;
+  overflow: auto;
 }
 
  /* Three columns side by side */
@@ -425,6 +403,8 @@ flex-direction: row;
 flex-wrap: wrap-reverse;
 align-items: stretch;
 justify-items: center;
+align-content: center;
+justify-content: center;
 }
 
 .rvwimg{
@@ -444,15 +424,233 @@ justify-items: center;
   color: #0CF574;
   font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
   margin-left: 25px;
+  padding: 25px;
 }
 
 .rvwintro{
   font-family: Playball,"Arial Rounded MT Bold", "Coppper Black";
   color: #0CF574;
   margin-left: 23px;
+  left: 10px;
+  padding: 25px;
 }
 
 .rvwstat{
   color:#FE7F2D;
   padding: 2px 0 2px 0;
+  left: 10px;
+}
+/*Below is the styling for the Bookings feature.*/
+
+#Bookingsection{
+  border: 2px solid #2F97C1;
+  border-radius: 5%;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+form{
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #FE7F2D;
+  border-radius: 1em;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li{
+  margin-top:1em;
+}
+
+label{
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: #0CF574;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+input, textarea{
+  /* To make sure that all text fields have the same font settings
+   By default, textareas have a monospace font */
+font: 1em sans-serif;
+
+/* Uniform text field size */
+width: 300px;
+box-sizing: border-box;
+
+/* Match form field borders */
+border: 1.8px solid #0CF574;
+}
+
+input:focus,
+textarea:focus {
+/* Additional highlight for focused elements */
+border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+  background: none;
+} 
+.button:hover{
+  background: none;
+}
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+  color: #0CF574;
+  background-color: #2F97C1;
+  border-radius: 5%;
+  border: 1.8px groove #FE7F2D;
+}
+
+button:hover{
+  color: red;
+  background-color: aqua;
+
+}
+
+.bksstat{
+  color: #FE7F2D;
+  font-family: Playball;
+  font-size: 25px;
+}
+
+.feedbackmsg{
+  color: #0CF574;
+  font-family: Poppins;
+  font-style: italic;
+
+}
+
+
+
+/*Below is a descrition and the settings of how this site will look on different computer screens.
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+/*Generalchanges*/
+h2{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+nav{
+  display: flex;
+  justify-content:  space-around;
+  padding-left: 100px;
+}
+
+#links_addresses{
+  display: inline;
+  font-size: 15px;
+}
+
+.linkttl{
+font-size: 20px;
+border-top: 2px solid #2F97C1;
+} 
+
+nav, #links_addresses{
+  flex-direction: column;
+}
+
+.logo{
+  width: 40px;
+}
+
+/*For the homepage*/
+h1{
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.caption-container{
+padding: 1px 8px;
+font-size: 18px;
+}
+
+.numbertext{
+  font-size: 12px;
+}
+
+.intro-statements{
+  padding: 40px;
+}
+
+/*For page 2*/
+ol{
+  padding: 15px;
+}
+
+.listimg{
+  float: right;
+}
+
+.service{
+  clear: right;
+  font-size: 22px;
+}
+
+li{
+  overflow: auto;
+  font-size: 12px;
+}
+
+.s-a-img{
+  width: 100%;
+}
+
+form{
+  display: inline;
+  border: none;
+}
+
+button{
+margin-right: 32px;
+}
+
+label{
+  font-size: 15px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.bksstat{
+  font-size: 20px;
+}
+/*For page 3*/
+.faq{
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.faqans{
+  font-size: 18px;
+  padding: 20px;
+}
+
+.rvwimg{
+  max-width: 50%;
+}
+
+
 }
